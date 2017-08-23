@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343893071E2459E49B5ED415 /* Pods_Quipu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEC9838E31A09B6E6F23756 /* Pods_Quipu.framework */; };
+		7099F5091F4D03B7006FC69B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7099F5081F4D03B7006FC69B /* HomeViewController.swift */; };
+		7099F50B1F4D106B006FC69B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7099F50A1F4D106B006FC69B /* SettingsViewController.swift */; };
 		70E06EBF1F4CF4570073D0FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06EBE1F4CF4570073D0FF /* AppDelegate.swift */; };
 		70E06EC11F4CF4570073D0FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06EC01F4CF4570073D0FF /* ViewController.swift */; };
 		70E06EC41F4CF4570073D0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E06EC21F4CF4570073D0FF /* Main.storyboard */; };
@@ -14,6 +17,8 @@
 		70E06EC91F4CF4570073D0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E06EC71F4CF4570073D0FF /* LaunchScreen.storyboard */; };
 		70E06ED41F4CF4570073D0FF /* QuipuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06ED31F4CF4570073D0FF /* QuipuTests.swift */; };
 		70E06EDF1F4CF4570073D0FF /* QuipuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06EDE1F4CF4570073D0FF /* QuipuUITests.swift */; };
+		70E06EED1F4CF47D0073D0FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06EEC1F4CF47D0073D0FF /* LoginViewController.swift */; };
+		70E06EEF1F4CFE170073D0FF /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06EEE1F4CFE170073D0FF /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7099F5081F4D03B7006FC69B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7099F50A1F4D106B006FC69B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		70E06EBB1F4CF4570073D0FF /* Quipu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quipu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E06EBE1F4CF4570073D0FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E06EC01F4CF4570073D0FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,11 @@
 		70E06EDA1F4CF4570073D0FF /* QuipuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuipuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E06EDE1F4CF4570073D0FF /* QuipuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuipuUITests.swift; sourceTree = "<group>"; };
 		70E06EE01F4CF4570073D0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E06EEC1F4CF47D0073D0FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70E06EEE1F4CFE170073D0FF /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		74E3892C107500E299535C59 /* Pods-Quipu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quipu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quipu/Pods-Quipu.release.xcconfig"; sourceTree = "<group>"; };
+		BBEC9838E31A09B6E6F23756 /* Pods_Quipu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quipu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB9B76BB8C94C522657A2BF /* Pods-Quipu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quipu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quipu/Pods-Quipu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343893071E2459E49B5ED415 /* Pods_Quipu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E89E0EB33E04A7F2DFF0594 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBEC9838E31A09B6E6F23756 /* Pods_Quipu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70E06EB21F4CF4570073D0FF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +102,8 @@
 				70E06ED21F4CF4570073D0FF /* QuipuTests */,
 				70E06EDD1F4CF4570073D0FF /* QuipuUITests */,
 				70E06EBC1F4CF4570073D0FF /* Products */,
+				AFFDB56B378E6627E3DF7683 /* Pods */,
+				1E89E0EB33E04A7F2DFF0594 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +123,10 @@
 				70E06EBE1F4CF4570073D0FF /* AppDelegate.swift */,
 				70E06EC01F4CF4570073D0FF /* ViewController.swift */,
 				70E06EC21F4CF4570073D0FF /* Main.storyboard */,
+				7099F50A1F4D106B006FC69B /* SettingsViewController.swift */,
+				7099F5081F4D03B7006FC69B /* HomeViewController.swift */,
+				70E06EEE1F4CFE170073D0FF /* LoginTextField.swift */,
+				70E06EEC1F4CF47D0073D0FF /* LoginViewController.swift */,
 				70E06EC51F4CF4570073D0FF /* Assets.xcassets */,
 				70E06EC71F4CF4570073D0FF /* LaunchScreen.storyboard */,
 				70E06ECA1F4CF4570073D0FF /* Info.plist */,
@@ -125,6 +152,15 @@
 			path = QuipuUITests;
 			sourceTree = "<group>";
 		};
+		AFFDB56B378E6627E3DF7683 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCB9B76BB8C94C522657A2BF /* Pods-Quipu.debug.xcconfig */,
+				74E3892C107500E299535C59 /* Pods-Quipu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70E06EE31F4CF4570073D0FF /* Build configuration list for PBXNativeTarget "Quipu" */;
 			buildPhases = (
+				CD03005F9D8833BB3209F3C9 /* [CP] Check Pods Manifest.lock */,
 				70E06EB71F4CF4570073D0FF /* Sources */,
 				70E06EB81F4CF4570073D0FF /* Frameworks */,
 				70E06EB91F4CF4570073D0FF /* Resources */,
+				42324832508078DCEC87613E /* [CP] Embed Pods Frameworks */,
+				7E78D848B98447BD8D5BFB1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +290,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42324832508078DCEC87613E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quipu/Pods-Quipu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E78D848B98447BD8D5BFB1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quipu/Pods-Quipu-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quipu/Pods-Quipu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD03005F9D8833BB3209F3C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quipu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70E06EB71F4CF4570073D0FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7099F5091F4D03B7006FC69B /* HomeViewController.swift in Sources */,
+				70E06EED1F4CF47D0073D0FF /* LoginViewController.swift in Sources */,
+				70E06EEF1F4CFE170073D0FF /* LoginTextField.swift in Sources */,
 				70E06EC11F4CF4570073D0FF /* ViewController.swift in Sources */,
 				70E06EBF1F4CF4570073D0FF /* AppDelegate.swift in Sources */,
+				7099F50B1F4D106B006FC69B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +519,7 @@
 		};
 		70E06EE41F4CF4570073D0FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB9B76BB8C94C522657A2BF /* Pods-Quipu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BG74556S27;
@@ -435,6 +534,7 @@
 		};
 		70E06EE51F4CF4570073D0FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E3892C107500E299535C59 /* Pods-Quipu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BG74556S27;
