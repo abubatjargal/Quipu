@@ -10,8 +10,8 @@
 		343893071E2459E49B5ED415 /* Pods_Quipu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEC9838E31A09B6E6F23756 /* Pods_Quipu.framework */; };
 		7099F5091F4D03B7006FC69B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7099F5081F4D03B7006FC69B /* HomeViewController.swift */; };
 		7099F50B1F4D106B006FC69B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7099F50A1F4D106B006FC69B /* SettingsViewController.swift */; };
+		70B3808E1F4E73C500513B33 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B3808D1F4E73C500513B33 /* SearchResultsController.swift */; };
 		70E06EBF1F4CF4570073D0FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06EBE1F4CF4570073D0FF /* AppDelegate.swift */; };
-		70E06EC11F4CF4570073D0FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E06EC01F4CF4570073D0FF /* ViewController.swift */; };
 		70E06EC41F4CF4570073D0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E06EC21F4CF4570073D0FF /* Main.storyboard */; };
 		70E06EC61F4CF4570073D0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E06EC51F4CF4570073D0FF /* Assets.xcassets */; };
 		70E06EC91F4CF4570073D0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E06EC71F4CF4570073D0FF /* LaunchScreen.storyboard */; };
@@ -41,9 +41,9 @@
 /* Begin PBXFileReference section */
 		7099F5081F4D03B7006FC69B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7099F50A1F4D106B006FC69B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		70B3808D1F4E73C500513B33 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		70E06EBB1F4CF4570073D0FF /* Quipu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quipu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E06EBE1F4CF4570073D0FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70E06EC01F4CF4570073D0FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70E06EC31F4CF4570073D0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70E06EC51F4CF4570073D0FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70E06EC81F4CF4570073D0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,10 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				70E06EBE1F4CF4570073D0FF /* AppDelegate.swift */,
-				70E06EC01F4CF4570073D0FF /* ViewController.swift */,
 				70E06EC21F4CF4570073D0FF /* Main.storyboard */,
 				7099F50A1F4D106B006FC69B /* SettingsViewController.swift */,
 				7099F5081F4D03B7006FC69B /* HomeViewController.swift */,
+				70B3808D1F4E73C500513B33 /* SearchResultsController.swift */,
 				70E06EEE1F4CFE170073D0FF /* LoginTextField.swift */,
 				70E06EEC1F4CF47D0073D0FF /* LoginViewController.swift */,
 				70E06EC51F4CF4570073D0FF /* Assets.xcassets */,
@@ -353,7 +353,7 @@
 				7099F5091F4D03B7006FC69B /* HomeViewController.swift in Sources */,
 				70E06EED1F4CF47D0073D0FF /* LoginViewController.swift in Sources */,
 				70E06EEF1F4CFE170073D0FF /* LoginTextField.swift in Sources */,
-				70E06EC11F4CF4570073D0FF /* ViewController.swift in Sources */,
+				70B3808E1F4E73C500513B33 /* SearchResultsController.swift in Sources */,
 				70E06EBF1F4CF4570073D0FF /* AppDelegate.swift in Sources */,
 				7099F50B1F4D106B006FC69B /* SettingsViewController.swift in Sources */,
 			);

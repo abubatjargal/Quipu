@@ -114,24 +114,14 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="69.715142428785612"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="zji-Hr-It5">
             <objects>
-                <viewController id="6cd-Bv-mmw" customClass="HomeViewController" customModule="Quipu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6cd-Bv-mmw" userLabel="Home View Controller" customClass="HomeViewController" customModule="Quipu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLg-wV-znS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address for pick up" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECz-Xs-4Kl" customClass="LoginTextField" customModule="Quipu" customModuleProvider="target">
-                                <rect key="frame" x="16" y="31" width="343" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="BCJ-Ys-eUA"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bko-hs-Yjf">
                                 <rect key="frame" x="16" y="558" width="163.5" height="45"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,32 +145,54 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c7-MT-Bck">
+                                <rect key="frame" x="309" y="30" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.4578695377" blue="0.11971066919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f96-gC-xlE"/>
+                                    <constraint firstAttribute="width" constant="50" id="wL2-rQ-VTR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchWithAddress:" destination="6cd-Bv-mmw" eventType="touchUpInside" id="Kd6-LC-BNY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.4578695377" blue="0.11971066919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KO7-qF-Hz5" firstAttribute="bottom" secondItem="bko-hs-Yjf" secondAttribute="bottom" constant="15" id="2xs-so-l0C"/>
-                            <constraint firstItem="KO7-qF-Hz5" firstAttribute="trailing" secondItem="ECz-Xs-4Kl" secondAttribute="trailing" constant="16" id="8I7-N5-oKg"/>
-                            <constraint firstItem="ECz-Xs-4Kl" firstAttribute="top" secondItem="KO7-qF-Hz5" secondAttribute="top" constant="20" id="CbT-ZF-12d"/>
-                            <constraint firstItem="ECz-Xs-4Kl" firstAttribute="top" secondItem="KO7-qF-Hz5" secondAttribute="top" constant="11" id="EGs-Yu-kMB"/>
+                            <constraint firstItem="9c7-MT-Bck" firstAttribute="top" secondItem="KO7-qF-Hz5" secondAttribute="top" constant="10" id="BnK-Wc-4k1"/>
                             <constraint firstItem="bko-hs-Yjf" firstAttribute="width" secondItem="FYO-BT-okP" secondAttribute="width" id="PBP-fh-XCf"/>
+                            <constraint firstItem="KO7-qF-Hz5" firstAttribute="trailing" secondItem="9c7-MT-Bck" secondAttribute="trailing" constant="16" id="SIp-1a-DOI"/>
                             <constraint firstItem="KO7-qF-Hz5" firstAttribute="bottom" secondItem="FYO-BT-okP" secondAttribute="bottom" constant="15" id="f9G-KQ-0qr"/>
                             <constraint firstItem="KO7-qF-Hz5" firstAttribute="trailing" secondItem="FYO-BT-okP" secondAttribute="trailing" constant="16" id="fWD-by-tNs"/>
-                            <constraint firstItem="ECz-Xs-4Kl" firstAttribute="leading" secondItem="KO7-qF-Hz5" secondAttribute="leading" constant="16" id="n4b-Ay-aLs"/>
                             <constraint firstItem="bko-hs-Yjf" firstAttribute="leading" secondItem="KO7-qF-Hz5" secondAttribute="leading" constant="16" id="sty-yq-h5i"/>
                             <constraint firstItem="FYO-BT-okP" firstAttribute="leading" secondItem="bko-hs-Yjf" secondAttribute="trailing" constant="16" id="zfl-sl-bQd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KO7-qF-Hz5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="NMx-ea-41e" userLabel="Home"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Gwr-qa-h9R"/>
+                    <navigationItem key="navigationItem" id="bRa-Gb-Ct4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="7Gl-cz-5v1">
+                            <connections>
+                                <action selector="searchWithAddress:" destination="6cd-Bv-mmw" id="VAm-tw-OL9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="addressField" destination="ECz-Xs-4Kl" id="SXF-hf-03t"/>
+                        <outlet property="googleMapsContainer" destination="uLg-wV-znS" id="j1w-Z6-d8q"/>
                         <outlet property="pickupLater" destination="FYO-BT-okP" id="Zsr-gm-vpX"/>
                         <outlet property="pickupNow" destination="bko-hs-Yjf" id="Ips-Gu-tUj"/>
+                        <outlet property="searchButton" destination="9c7-MT-Bck" id="Rv4-Yt-qL0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j71-vr-WQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744.8" y="69.715142428785612"/>
+            <point key="canvasLocation" x="2084" y="69.715142428785612"/>
         </scene>
         <!--Settings-->
         <scene sceneID="VNP-QI-n9b">
@@ -267,7 +279,7 @@
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="6cd-Bv-mmw" kind="relationship" relationship="viewControllers" id="LgX-bs-kXt"/>
+                        <segue destination="6cd-Bv-mmw" kind="relationship" relationship="viewControllers" id="caD-D7-ua5"/>
                         <segue destination="eaO-es-yao" kind="relationship" relationship="viewControllers" id="AcS-hs-RcB"/>
                         <segue destination="Yx4-g6-3av" kind="relationship" relationship="viewControllers" id="YIg-Zd-ZDz"/>
                         <segue destination="fIR-Db-NKu" kind="relationship" relationship="viewControllers" id="hna-Q5-x65"/>
