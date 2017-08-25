@@ -48,7 +48,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate, UISearchBarDele
     }
     
     func setupMap() {
-        let camera = GMSCameraPosition.camera(withLatitude: 1.285, longitude: 103.848, zoom: 12)
+        let camera = GMSCameraPosition.camera(withLatitude: 42.356965, longitude:  -71.069506, zoom: 12)
         googleMapsView = GMSMapView.map(withFrame: .zero, camera: camera)
         googleMapsView.frame = UIScreen.main.bounds
         self.view.insertSubview(googleMapsView, at: 0)
@@ -115,9 +115,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate, UISearchBarDele
     func locateWithLongitude(_ lon: Double, andLatitude lat: Double, andTitle title: String) {
         
         DispatchQueue.main.async() { () -> Void in
-            UIView.animate(withDuration: 0.3, animations:{
-                self.searchButton.frame = CGRect(x: self.searchButton.frame.origin.x - 100, y: self.searchButton.frame.origin.y, width: self.searchButton.frame.size.width, height: self.searchButton.frame.size.height)
-            })
+            
             
             let position = CLLocationCoordinate2DMake(lat, lon)
             let marker = GMSMarker(position: position)
@@ -128,6 +126,12 @@ class HomeViewController: UIViewController, UITextFieldDelegate, UISearchBarDele
             
         }
         
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        UIView.animate(withDuration: 0.3, animations:{
+            self.searchButton.frame = CGRect(x: self.searchButton.frame.origin.x - 100, y: self.searchButton.frame.origin.y, width: self.searchButton.frame.size.width, height: self.searchButton.frame.size.height)
+        })
     }
     
     /**
